@@ -57,14 +57,14 @@ docker run --rm -it \
 
 ### Installation
 ```bash
-$ sudo apt install ros-foxy-desktop ros-foxy-v4l2-camera
-$ source /opt/ros/foxy/setup.bash
+$ sudo apt install ros-eloquent-desktop ros-eloquent-v4l2-camera
+$ source /opt/ros/eloquent/setup.bash
 $ mkdir -p ~/ros2_ws/src
 $ cd ~/ros2_ws/src
-$ git clone --recursive https://github.com/Ar-Ray-code/darknet_ros_yolov4.git
-$ darknet_ros_yolov4/darknet_ros/rm_darknet_CMakeLists.sh
+$ git clone --recursive https://github.com/pharath/darknet_ros_fp16.git
+$ darknet_ros_fp16/darknet_ros/rm_darknet_CMakeLists.sh
 $ cd ~/ros2_ws
-$ colcon build --symlink-install
+$ ./compile.sh --messages --release
 ```
 ### Edit CMakeLists.txt
 
